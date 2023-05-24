@@ -5,7 +5,7 @@
 # Output: 120
 
 
-n = 7
+n = 5
 i = 1
 fact = 1
 
