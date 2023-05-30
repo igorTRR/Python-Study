@@ -5,3 +5,12 @@
 # с предыдущим номером)
 # Input: [0, -1, 5, 2, 3]
 # Output: 2 (-1 < 5, 2 < 3)
+
+arr = [0, -1, 5, 2, 3]
+print(arr)
+count = 0
+for i in range(-1, len(arr)):
+    if arr[i] > arr[i-1]:
+        count += 1
+        
+print(i < i-1)
