@@ -3,16 +3,30 @@
 # Количество повторов добавляется к символам
 # с помощью постфикса формата _n.
 
-replay = 'a a a b a c b b d'.split()
-letters = {}
-result = ''
-for i in range(len(replay)):                # через срезы
-    if replay[0:i:].count(replay[i]) == 0:
-        result += replay[i]
+stroka = "a a a b c a a d c d d".split() # используем словарь
+new = dict()
+rezult = ""
+
+for i in stroka:
+    if i not in new:
+        new[i] = 1
+        rezult += i + " "
     else:
-         result += f'{replay[i]}_{replay[0:i].count(replay[i])}'
-    print(replay[0:i], result)
-print(result)
+        rezult = rezult + (i + "_" + str(new[i]) + " ")
+        new[i] += 1
+
+print(rezult)
+
+# replay = 'a a a b a c b b d'.split()
+# letters = {}
+# result = ''
+# for i in range(len(replay)):                # через срезы
+#     if replay[0:i:].count(replay[i]) == 0:
+#         result += replay[i]
+#     else:
+#          result += f'{replay[i]}_{replay[0:i].count(replay[i])}'
+#     print(replay[0:i], result)
+# print(result)
  
 
 # for i in range(len(replay)):
