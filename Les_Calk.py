@@ -35,6 +35,12 @@ def math(op, x, y):     # ор - какая-то фунция, х -параме�
     
 math(calk1, 5, 45) 
 math(calk2, 5, 45) 
-    
+print()
+
+calk1 = lambda a,b:a+b
+math(calk1, 5, 45) 
+#или
+print()
+math (lambda a,b: a+b, 5,45)
 
 
