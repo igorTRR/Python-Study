@@ -1,4 +1,4 @@
-list_1 = [i for i in range(1,20) ]
+list_1 = [i for i in range(1,20) ] # ГЕНЕРАТОР
 print(list_1)
 
 list_1 = list(map(lambda i: i + 10, list_1))
